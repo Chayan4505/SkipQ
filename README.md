@@ -27,15 +27,7 @@ Backend API for the QueueLess Kirana Store application.
 npm install
 ```
 
-2. Create a `.env` file in the server directory:
-```env
-PORT=5000
-NODE_ENV=development
-MONGODB_URI=mongodb://localhost:27017/kirana-flow
-JWT_SECRET=your-super-secret-jwt-key
-JWT_EXPIRE=7d
-FRONTEND_URL=http://localhost:8080
-```
+
 
 3. Make sure MongoDB is running on your system
 
