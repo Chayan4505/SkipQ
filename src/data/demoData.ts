@@ -1,0 +1,118 @@
+import { Shop, Product } from "@/types/shop";
+
+export const demoShops: Shop[] = [
+  {
+    id: "1",
+    name: "Sharma Kirana Store",
+    image: "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=400",
+    rating: 4.5,
+    deliveryTime: "15-20 min",
+    distance: "0.5 km",
+    categories: ["Groceries", "Dairy", "Snacks"],
+    isOpen: true,
+  },
+  {
+    id: "2",
+    name: "Gupta General Store",
+    image: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400",
+    rating: 4.2,
+    deliveryTime: "20-30 min",
+    distance: "0.8 km",
+    categories: ["Groceries", "Household", "Personal Care"],
+    isOpen: true,
+  },
+  {
+    id: "3",
+    name: "Patel Provision Store",
+    image: "https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=400",
+    rating: 4.7,
+    deliveryTime: "10-15 min",
+    distance: "0.3 km",
+    categories: ["Fruits", "Vegetables", "Groceries"],
+    isOpen: true,
+  },
+  {
+    id: "4",
+    name: "Singh Supermart",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400",
+    rating: 4.0,
+    deliveryTime: "25-35 min",
+    distance: "1.2 km",
+    categories: ["Groceries", "Beverages", "Snacks"],
+    isOpen: false,
+  },
+  {
+    id: "5",
+    name: "Kumar Daily Needs",
+    image: "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?w=400",
+    rating: 4.3,
+    deliveryTime: "15-25 min",
+    distance: "0.6 km",
+    categories: ["Dairy", "Bread", "Essentials"],
+    isOpen: true,
+  },
+  {
+    id: "6",
+    name: "Verma Fresh Mart",
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=400",
+    rating: 4.6,
+    deliveryTime: "12-18 min",
+    distance: "0.4 km",
+    categories: ["Fruits", "Vegetables", "Organic"],
+    isOpen: true,
+  },
+];
+
+export const demoProducts: Record<string, Product[]> = {
+  "1": [
+    { id: "p1", name: "Tata Salt", image: "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?w=200", price: 28, unit: "1 kg", category: "Groceries", inStock: true },
+    { id: "p2", name: "Aashirvaad Atta", image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=200", price: 280, originalPrice: 320, unit: "5 kg", category: "Groceries", inStock: true },
+    { id: "p3", name: "Amul Butter", image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=200", price: 56, unit: "100 gm", category: "Dairy", inStock: true },
+    { id: "p4", name: "Parle-G Biscuits", image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=200", price: 10, unit: "Pack", category: "Snacks", inStock: true },
+    { id: "p5", name: "Amul Milk", image: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=200", price: 30, unit: "500 ml", category: "Dairy", inStock: true },
+    { id: "p6", name: "Sugar", image: "https://images.unsplash.com/photo-1550411294-875a67970ff8?w=200", price: 45, unit: "1 kg", category: "Groceries", inStock: false },
+  ],
+  "2": [
+    { id: "p7", name: "Surf Excel", image: "https://images.unsplash.com/photo-1585441695325-21557f8918b5?w=200", price: 120, unit: "1 kg", category: "Household", inStock: true },
+    { id: "p8", name: "Vim Bar", image: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=200", price: 15, unit: "1 piece", category: "Household", inStock: true },
+    { id: "p9", name: "Colgate Toothpaste", image: "https://images.unsplash.com/photo-1571942676516-bcab84649e44?w=200", price: 85, unit: "150 gm", category: "Personal Care", inStock: true },
+    { id: "p10", name: "Dettol Soap", image: "https://images.unsplash.com/photo-1584305574647-0cc949a2bb9f?w=200", price: 42, unit: "75 gm", category: "Personal Care", inStock: true },
+    { id: "p11", name: "Rice", image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=200", price: 65, unit: "1 kg", category: "Groceries", inStock: true },
+  ],
+  "3": [
+    { id: "p12", name: "Fresh Tomatoes", image: "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=200", price: 35, unit: "500 gm", category: "Vegetables", inStock: true },
+    { id: "p13", name: "Onions", image: "https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31?w=200", price: 40, unit: "1 kg", category: "Vegetables", inStock: true },
+    { id: "p14", name: "Potatoes", image: "https://images.unsplash.com/photo-1518977676601-b53f82ber47d?w=200", price: 30, unit: "1 kg", category: "Vegetables", inStock: true },
+    { id: "p15", name: "Bananas", image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=200", price: 45, unit: "1 dozen", category: "Fruits", inStock: true },
+    { id: "p16", name: "Apples", image: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=200", price: 180, originalPrice: 200, unit: "1 kg", category: "Fruits", inStock: true },
+  ],
+  "4": [
+    { id: "p17", name: "Coca Cola", image: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=200", price: 40, unit: "750 ml", category: "Beverages", inStock: true },
+    { id: "p18", name: "Lays Chips", image: "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=200", price: 20, unit: "Pack", category: "Snacks", inStock: true },
+    { id: "p19", name: "Maggi Noodles", image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=200", price: 14, unit: "Pack", category: "Groceries", inStock: true },
+  ],
+  "5": [
+    { id: "p20", name: "Fresh Bread", image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=200", price: 40, unit: "1 loaf", category: "Bread", inStock: true },
+    { id: "p21", name: "Eggs", image: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=200", price: 75, unit: "12 pcs", category: "Dairy", inStock: true },
+    { id: "p22", name: "Paneer", image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=200", price: 90, unit: "200 gm", category: "Dairy", inStock: true },
+  ],
+  "6": [
+    { id: "p23", name: "Organic Spinach", image: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=200", price: 30, unit: "250 gm", category: "Vegetables", inStock: true },
+    { id: "p24", name: "Organic Carrots", image: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=200", price: 50, unit: "500 gm", category: "Vegetables", inStock: true },
+    { id: "p25", name: "Oranges", image: "https://images.unsplash.com/photo-1547514701-42782101795e?w=200", price: 80, unit: "1 kg", category: "Fruits", inStock: true },
+  ],
+};
+
+export const productCategories = [
+  "All",
+  "Groceries",
+  "Dairy",
+  "Fruits",
+  "Vegetables",
+  "Snacks",
+  "Beverages",
+  "Household",
+  "Personal Care",
+  "Bread",
+  "Essentials",
+];
