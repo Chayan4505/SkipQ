@@ -22,16 +22,12 @@ Backend API for the QueueLess Kirana Store application.
 
 ## Setup
 
-1. Install dependencies:
+ Install dependencies:
 ```bash
 npm install
 ```
 
-
-
-3. Make sure MongoDB is running on your system
-
-4. Start the development server:
+ Start the development server:
 ```bash
 npm run dev
 ```
